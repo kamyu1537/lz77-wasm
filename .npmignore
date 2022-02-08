@@ -1,0 +1,8 @@
+/target
+/src
+/scripts
+/.idea
+/.git
+
+Cargo.lock
+Cargo.toml

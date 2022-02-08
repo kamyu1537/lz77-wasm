@@ -1,0 +1,13 @@
+# wasm template
+/target
+**/*.rs.bk
+Cargo.lock
+bin/
+pkg/
+wasm-pack.log
+
+# nodejs
+/node_modules
+
+# jetbrains
+/.idea

@@ -1,0 +1,23 @@
+{
+  "name": "@kamyu/lz77",
+  "version": "0.1.0",
+  "description": "konmai lz77 compression",
+  "main": "dist/lz77.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "wasm-pack build --target nodejs --out-name lz77 -d dist",
+    "postbuild": "node scripts/postbuild.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamyu1537/lz77-wasm.git"
+  },
+  "author": "Byeon Seongun <kamyu1537@gmail.com> (https://kamyu.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kamyu1537/lz77-wasm/issues"
+  },
+  "homepage": "https://github.com/kamyu1537/lz77-wasm#readme"
+}
