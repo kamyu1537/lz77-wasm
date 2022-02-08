@@ -16,7 +16,7 @@ npm run build
 ```
 
 ## How to use?
-> **parameter:** Buffer or Uint8Array
+> **parameter:** Buffer or Uint8Array  
 > **return:** String (Base64) 
 
 ### Javascript
