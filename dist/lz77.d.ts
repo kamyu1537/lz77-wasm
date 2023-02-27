@@ -2,11 +2,11 @@
 /* eslint-disable */
 /**
 * @param {Uint8Array} data
-* @returns {string}
+* @returns {Uint8Array}
 */
-export function compress(data: Uint8Array): string;
+export function compress(data: Uint8Array): Uint8Array;
 /**
 * @param {Uint8Array} data
-* @returns {string}
+* @returns {Uint8Array}
 */
-export function decompress(data: Uint8Array): string;
+export function decompress(data: Uint8Array): Uint8Array;

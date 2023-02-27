@@ -10,13 +10,13 @@ use wasm_bindgen::prelude::*;
 static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
 #[wasm_bindgen]
-pub fn compress(data: &[u8]) -> String {
+pub fn compress(data: &[u8]) -> Box<[u8]> {
     let compressed = lz77_compress(data);
-    base64::encode(compressed)
+    compressed.into_boxed_slice()
 }
 
 #[wasm_bindgen]
-pub fn decompress(data: &[u8]) -> String {
+pub fn decompress(data: &[u8]) -> Box<[u8]> {
     let decompressed = lz77_decompress(data);
-    base64::encode(decompressed)
+    decompressed.into_boxed_slice()
 }
